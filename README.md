@@ -3,20 +3,19 @@
 This repository contains the R scripts used to analyze the data from the article:  
 "Reactive oxygen species drive downward vertical migration in diatom microphytobenthic biofilms as a strategy to cope with oxidative stress", Desparmet et al.
 
-## Repository structure
+## Repository structure (SCRIPT Folder)
 
 - `ROS_MIGRATION.Rproj`: RStudio project file.
-- `scripts/`: all R scripts used for data processing and analysis.
-- `README.md`: this file.
-- `data/`: Load raw data into this folder.
+- `1_Data_formatting`: all R scripts used for data processing.
+- `2_Figures`: R script for figures.
 
 ### Raw data
 
 The raw data used in this project are available on ZENODO:  
-https://doi.org/10.5281/zenodo.15835853
+https://doi.org/10.5281/zenodo.15835853 ;
 https://doi.org/10.5281/zenodo.15847025 (not required for scripts)
 
-Please place the downloaded `data` folder into the `data_treatment/` folder.
+Please place the downloaded content of `data` (from zenodo) into the `/SCRIPT/1_Data_formatting/data` folder.
 
 The raw metabarcoding data used in this project are available on ENA:
 https://www.ebi.ac.uk/ena/browser/view/ERA33152396
@@ -25,11 +24,10 @@ https://www.ebi.ac.uk/ena/browser/view/ERA33152396
 
 The typical order of execution for the scripts in the `scripts/` folder is:
 
-1. Run the four `_formatting.R` scripts to import, clean and transform raw data.
+1. Run the five `_formatting.R` scripts to import, clean and transform raw data.
 2. Run `Fig_article.R`: for statistical analyses and article figure generation.
-3. Run `Fig_suppl.R`: for supplementary statistical analyses and article figure generation.
 
-All paths are relative to the project root and handled via the `here` package.
+All paths are relative to the project root.
 
 ##### Dependencies
 
