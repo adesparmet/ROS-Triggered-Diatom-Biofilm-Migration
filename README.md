@@ -1,4 +1,4 @@
-# Data processing for the article "ROS-Driven Diatom Biofilm Migration"
+# Data processing for the article "ROS-Triggered Diatom Biofilm Migration"
 
 This repository contains the R scripts used to analyze the data from the article:  
 "Reactive oxygen species drive downward vertical migration in diatom microphytobenthic biofilms as a strategy to cope with oxidative stress", Desparmet et al.
